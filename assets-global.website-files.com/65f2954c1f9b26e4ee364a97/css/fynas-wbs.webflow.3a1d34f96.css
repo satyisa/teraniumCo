@@ -2203,7 +2203,7 @@ textarea.w-select {
 }
 
 :root {
-  --color--secondary-4: #fff8f0;
+  --color--secondary-4: #f9fffd;
   --font-family--body: Inter, sans-serif;
   --color--body: var(--color--primary-1);
   --font-family--heading: Satoshi, sans-serif;
@@ -2211,21 +2211,21 @@ textarea.w-select {
   --color--primary-1: #004247;
   --color--primary-3: #f5ebbe;
   --border-radius--border-radius: 20px;
-  --color--gray-2: #f4edce;
+  --color--gray-2: #d9d9d9;
   --border-radius--form-input: 20px;
   --color--transparent: rgba(0, 0, 0, 0);
   --color--border-color: var(--color--primary-1);
   --border-radius--button: 40px;
-  --color--secondary-2: #f4edce;
+  --color--secondary-2: #e8faf9;
   --color--white: white;
   --color--secondary-1: #335a65;
   --color--gray-4: #f2f4f5;
   --color--secondary-3: #f4edce;
-  --color--primary-2: #007a7a;
+  --color--primary-2: #007079;
   --border-radius--sm: 15px;
   --color--black: #130d1b;
   --color--gray-1: #7f7f7f;
-  --color--gray-3: #f3f0e366;
+  --color--gray-3: #f9fffd;
 }
 
 /* :root {
@@ -2262,12 +2262,19 @@ textarea.w-select {
 }
 
 .w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+.w-layout-gridd {
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .w-form-formradioinput--inputType-custom {
@@ -3756,10 +3763,10 @@ figcaption {
 }
 
 .button-primary {
-  border: 1px solid var(--color--secondary-4);
+  border: 1px solid var(--color--white);
   border-radius: var(--border-radius--button);
   background-color: var(--color--primary-1);
-  color: var(--color--secondary-4);
+  color: var(--color--white);
   text-align: center;
   padding: 15px 25px;
   font-size: 16px;
@@ -4273,7 +4280,8 @@ figcaption {
 .footer-copyright {
   color: var(--color--secondary-4);
   align-items: flex-end;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .form-subscribe {
@@ -4516,7 +4524,7 @@ figcaption {
 
 .accordion-wrap {
   border-radius: var(--border-radius--border-radius);
-  background-color: var(--color--gray-4);
+  background-color: var(--color--secondary-3);
   width: 95%;
   margin-bottom: 30px;
 }
@@ -4833,6 +4841,10 @@ figcaption {
 
 .button-secondary.button-full {
   width: 100%;
+}
+.button-secondary.button-fulll {
+  width: 30%;
+  margin: 5% 30%;
 }
 
 .grid-dropdown {
@@ -5216,7 +5228,7 @@ figcaption {
 }
 
 .text-secondary-4 {
-  color: var(--color--secondary-4);
+  color: var(--color--white);
 }
 
 .integration-wrap {
@@ -5431,6 +5443,9 @@ figcaption {
 
 .section-title {
   margin-bottom: 30px;
+}
+.textr {
+  color: white;
 }
 
 .testimonial-section-title {
@@ -5680,6 +5695,16 @@ figcaption {
   align-items: flex-start;
   padding: 20px;
 }
+.pricing-itemm {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border-radius: var(--border-radius--border-radius);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  height: 300px;
+  width: 80%;
+}
 
 .pricing-list {
   flex-flow: column;
@@ -5729,6 +5754,13 @@ figcaption {
 .pricing-title {
   margin-bottom: 30px;
   font-size: 22px;
+}
+.pricing-titlee {
+  margin: 4% auto;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-divider {
@@ -5899,9 +5931,9 @@ figcaption {
   position: relative;
 }
 
-.dashboard-nine {
+/* .dashboard-nine {
   margin-top: 20px;
-}
+} */
 
 .feature-dashboard-one {
   grid-column-gap: 0px;
@@ -5947,13 +5979,13 @@ figcaption {
   margin-bottom: 80px;
 }
 
-.dashboard-eleven {
+/* .dashboard-eleven {
   object-fit: cover;
   width: 350px;
   height: 240px;
   margin-top: 20px;
   margin-left: 10px;
-}
+} */
 
 .grid-split-about {
   grid-column-gap: 50px;
@@ -6001,7 +6033,7 @@ figcaption {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
   border-radius: var(--border-radius--button);
-  background-color: var(--color--gray-3);
+  background-color: #fff1c8;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -6030,8 +6062,6 @@ figcaption {
 }
 
 .grid-feature-tabs {
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
   grid-template-rows: auto;
 }
 
@@ -6070,6 +6100,7 @@ figcaption {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
 .integration-marquee-wrap {
@@ -6077,6 +6108,15 @@ figcaption {
   grid-row-gap: 50px;
   margin-bottom: 60px;
   display: flex;
+}
+
+.integration-marquee-wrapp {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .integration-marquee-list {
@@ -6117,7 +6157,8 @@ figcaption {
 
 .split-feature-item {
   border-radius: var(--border-radius--border-radius);
-  background-color: var(--color--gray-3);
+  background-color: var(--color--primary-3);
+  color: var(--color--primary-1);
   margin-bottom: 30px;
 }
 
@@ -6158,9 +6199,7 @@ figcaption {
 }
 
 .split-feature-image-wrap {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  margin-top: 120px;
   position: relative;
 }
 
@@ -7597,7 +7636,7 @@ figcaption {
 .contact-form-wrap {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-color: var(--color--white);
+  background-color: #f4f1e3;
   border-radius: 20px;
   flex-flow: column;
   margin-bottom: 0;
@@ -9529,11 +9568,11 @@ figcaption {
   font-size: 24px;
 }
 
-.feature-dashboard {
+/* .feature-dashboard {
   width: 350px;
   height: 250px;
   margin-top: 20px;
-}
+} */
 
 .split-feature-content,
 .accordion-content {
@@ -10225,9 +10264,9 @@ figcaption {
     padding: 40px;
   }
 
-  .dashboard-nine {
+  /* .dashboard-nine {
     margin-top: 10px;
-  }
+  } */
 
   .feature-dashboard-one {
     top: 40px;
@@ -11236,10 +11275,10 @@ figcaption {
     width: 70%;
   }
 
-  .dashboard-ten {
+  /* .dashboard-nine {
     width: 250px;
     height: 230px;
-  }
+  } */
 
   .feature-dashboard-three {
     top: 98px;
@@ -11989,11 +12028,6 @@ figcaption {
     grid-row-gap: 10px;
     width: 100%;
     margin-bottom: 20px;
-  }
-
-  .grid-feature-tabs {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
   }
 
   .feature-tabs-description {
@@ -13285,8 +13319,6 @@ figcaption {
   }
 
   .grid-feature-tabs {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     grid-template-columns: 1fr;
   }
 
