@@ -5842,6 +5842,16 @@ figcaption {
   display: flex;
 }
 
+.logo-containn {
+  background-color: white;
+  border-radius: 8px; /* Small border radius curve */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
 .avatar-content {
   width: 50%;
   margin-bottom: 0;
