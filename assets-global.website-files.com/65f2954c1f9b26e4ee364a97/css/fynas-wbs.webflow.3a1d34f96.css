@@ -5985,10 +5985,6 @@ figcaption {
   right: 10px;
 }
 
-.feature-slide-wrap {
-  margin-bottom: 80px;
-}
-
 /* .dashboard-eleven {
   object-fit: cover;
   width: 350px;
@@ -10288,12 +10284,8 @@ figcaption {
     right: 40px;
   }
 
-  .feature-slide-wrap {
-    margin-bottom: 40px;
-  }
-
   .feature-slide-wrap-one {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   .counter-item-wrap {
@@ -14720,10 +14712,6 @@ figcaption {
 
   .feature-dashboard-three {
     display: none;
-  }
-
-  .feature-slide-wrap {
-    margin-bottom: 50px;
   }
 
   .counter-item-wrap {
